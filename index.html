@@ -4,12 +4,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My First Webpage</title>
-  <img src="ALI Innovation pic.png" alt="ALI Innovation program">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Webpage</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #007acc;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to ALI Innovation Program</h1>
+  <img src="ALI Innovation pic.png" alt="ALI Innovation program">
+  <h1>Welcome to ALI Innovation Program</h1>
   <p>The ALI Innovation Program is a hackathon-style innovation initiative organized under Hexagon’s Asset Lifecycle Intelligence (ALI) Division. It brings together developers, engineers, data scientists, and industry professionals to collaborate on solving real-world challenges across the asset lifecycle using cutting-edge technologies.</p>
+  <div class="grid-container">
+        <div class="grid-item"><img src="HR Policy.png" alt="HR Policy"></div>
+        <div class="grid-item"><img src="HRIS.png" alt="HRIS"></div>
+        <div class="grid-item"><img src="Peers.png" alt="Peers"></div>
+        <div class="grid-item"><img src="R&D.png" alt="R&D"></div>
+        <div class="grid-item"><img src="Support.png" alt="Support"></div>
+        <div class="grid-item"><img src="Wellness.png" alt="Wellness"></div>
+    </div>
 </body>
 </html>
